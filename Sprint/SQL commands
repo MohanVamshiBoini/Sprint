@@ -1,0 +1,26 @@
+SQL
+
+SQL> create table centre(centreName varchar2(20),CentreId varchar2(20),Tests varchar2(20),TestId varchar2(10));
+
+SQL> desc centre;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CENTRENAME                                         VARCHAR2(20)
+ CENTREID                                           VARCHAR2(20)
+ TESTS                                              VARCHAR2(20)
+ TESTID                                             VARCHAR2(10)
+ 
+ SQL> select * from centre;
+
+CENTRENAME           CENTREID             TESTS                TESTID
+-------------------- -------------------- -------------------- ----------
+hyd                  2                    blood sugar          5
+hyd                  2                    blood pressure       8
+hyd                  2                    cancer               29
+Ban                  21                   blood pressure       128
+hyd                  2                    blood group          2
+Ban                  21                   blood group          122
+Ban                  21                   blood sugar          125
+
+7 rows selected.
+ 
