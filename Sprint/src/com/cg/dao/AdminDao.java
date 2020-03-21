@@ -38,9 +38,11 @@ public class AdminDao implements AdminDaol {
 	}
 
 	public boolean removeCentre(String centreName) throws CentreNotFoundException { // Step 20
-		 if(centreDetails.containsKey(centreName)) {
+		if(centreDetails.isEmpty()) {
+			return true;
+		}
+		else if(centreDetails.containsKey(centreName)) {
 			centreDetails.remove(centreName, centre.Centre());
-			System.out.println(centreDetails.get(centreName));
 			return true;
 		}
 		 else {
